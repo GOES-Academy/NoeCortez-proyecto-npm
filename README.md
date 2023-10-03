@@ -95,3 +95,6 @@ De manera resumida, podemos decir que en este momento, ya hemos creado un proyec
 Sí lo notaste, estuve llamando a ___NPM___ de maneras totalmente diferentes, y es que, dentro de la comunidad tiende a llamársele con otros nombres al verdadero significado, que es ___Node Package Manager___. Sabiendo esto, quizá ya tiene un poco más de lógica esta pregunta.
 
 Se le conoce como paquetes o módulos, a todos aquéllos archivos que... XD después sigo xd
+
+# Resources link
+[Pokemon Design](https://www.behance.net/gallery/176133187/Pokmon-UI-estudo?tracking_source=search_projects|pokemon+ui)

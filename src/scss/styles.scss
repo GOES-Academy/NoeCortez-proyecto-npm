@@ -1,2 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300;400;700&display=swap');
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+:root {
+    --p-white: #f8f8f8;
+    --p-black: #141414;
+    --p-yellow: #edcd2c;
+    --p-bluegray: #2e3e4b;
+    --p-gray: #d3d3d3;
+}
+
+body {
+    background-color: #f5e8be;
+    font-family: Roboto, sans-serif !important;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: bold;
+}
+
+a {
+    color: var(--p-yellow);
+}
+
+.poke-container {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: -3px 3px 18px rgba(47, 63, 76, 0.3);
+
+    img {
+        height: 520px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    main {
+        border-radius: 10px;
+        margin-left: -1rem;
+        padding: 2rem 4rem;
+        background-color: #f8f8f8;
+        background-color: var(--p-white);
+
+        .divider {
+            text-transform: uppercase;
+            margin: 1rem auto;
+            width: 180px;
+
+            &::after {
+                content: '  _________';
+                padding-bottom: 5px;
+            }
+
+            &::before {
+                content: '_________  ';
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
