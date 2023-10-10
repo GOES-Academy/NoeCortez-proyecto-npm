@@ -12,7 +12,7 @@ steps:
   args:
     - "app"
     - "deploy"
-    # - "--appyaml=app-${_BRANCH}.yaml"
+    - "--appyaml=app-${_BRANCH}.yaml"
 timeout: "1600s"
 
 substitutions:
