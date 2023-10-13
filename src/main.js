@@ -1,16 +1,11 @@
 // Import our custom CSS
+import Alpine from 'alpinejs';
 import './scss/styles.scss';
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap';
-import { setupCounter } from './js/counter';
+import { home, login } from './js/pages';
 
-console.log("This is my enviroment variable:", import.meta.env.VITE_API_URL);
+Alpine.data('home', home);
+Alpine.data('login', login);
 
-document.querySelector('#app').innerHTML = `
-    <div class="container">
-        <h1 class="text-primary">Hello World!</h1>
-        <button class="btn btn-primary" id="counter" type="button"></button>
-    </div>
-`;
-
-setupCounter(document.querySelector('#counter'));
+Alpine.start();
