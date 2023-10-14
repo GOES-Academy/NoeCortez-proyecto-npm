@@ -1,48 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/pokeball-pokemon.svg" type="image/svg+xml">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi proyecto NPM</title>
-</head>
-<body>
-    <div class="poke-container" x-data="login">
-        <img src="/img/portada.jpg" alt="portada-pokemon">
-        <main>
-            <h1 x-text="title">Sign in</h1>
-            <p class="text-secondary text-opacity-75">
-                Don't have a account?
-                <a href="#">Sign up</a>
-            </p>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/pokeball-pokemon.svg" type="image/svg+xml" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <div class="mb-3">
-                <button class="btn btn-outline-secondary">
-                    Sign up with Google
-                </button>
-                <button class="btn btn-outline-primary">
-                    Sign up with Facebook
-                </button>
-            </div>
+        <title>Mi proyecto NPM</title>
+    </head>
+    <body>
+        <!-- Manejador de rutas -->
+        <div id="router" x-data="router"></div>
 
-            <div class="divider">or</div>
+        <!-- Contenedor donde se renderizará las páginas -->
+        <div id="app"></div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter your email" />
-            </div>
-
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password" />
-            </div>
-
-            <a href="#" class="my-3 d-block te">Forgot your password</a>
-
-            <button class="btn btn-warning w-100" @click="submit">Sign in</button>
-        </main>
-    </div>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
+        <!-- Archivo principal de mi APP -->
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>
