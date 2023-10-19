@@ -7,19 +7,19 @@ export default [
     // Home
     {
         path: "/",
-        handler: "", // optional
+        handler: "modifyTitle", // optional
         view: "/pages/Home.html",
     },
     // Login
     {
         path: "/login",
-        handler: "",
+        handler: "modifyTitle",
         view: "/pages/Login.html",
     },
     // 404 Not Found
     {
         path: "notfound",
-        handler: "[notFoundHandler]",
+        handler: "[notFoundHandler, modifyTitle]",
         view: "/pages/404.html"
     }
 ];
